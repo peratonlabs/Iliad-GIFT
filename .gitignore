@@ -1,4 +1,5 @@
 #Directories to ignore
 test/
 data/
-calibration/
+*/__pycache__*
+
