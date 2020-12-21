@@ -1,0 +1,4 @@
+#Directories to ignore
+test/
+data/
+calibration/

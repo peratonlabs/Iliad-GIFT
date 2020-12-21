@@ -1,0 +1,16 @@
+Bootstrap: docker
+From: pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime
+
+%files
+    ./ens14_detector.py /gift/
+    ./utils /gift/
+    ./detection /gift/
+    ./attacks /gift/
+    ./calibration/fitted /gift/calibration/
+
+%post
+    /opt/conda/bin/conda install scikit-image joblib scikit-learn
+    /opt/conda/bin/pip install advertorch
+
+%runscript
+    exec python3 /gift/ens14_detector.py "$@"
