@@ -1,0 +1,18 @@
+Bootstrap: docker
+From: pytorch/pytorch:1.7.0-cuda11.0-cudnn8-runtime
+
+%files
+    ./jac_detector.py /gift/
+    ./model_factories.py /gift/
+    ./utils /gift/
+    ./detection /gift/
+    ./calibration/fitted /gift/calibration/
+
+
+%post
+    /opt/conda/bin/pip install trojai
+    /opt/conda/bin/conda install jsonpickle
+    /opt/conda/bin/conda install scikit-image joblib scikit-learn
+
+%runscript
+    exec python3 /gift/jac_detector.py "$@"
