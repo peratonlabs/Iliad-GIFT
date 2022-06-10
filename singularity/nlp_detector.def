@@ -1,0 +1,27 @@
+Bootstrap: docker
+From: pytorch/pytorch:1.7.0-cuda11.0-cudnn8-runtime
+
+%files
+    ./nlp_detector.py /gift/
+
+    ./utils /gift/
+    ./detection /gift/
+    ./trinv /gift/
+    ./config /gift/
+    ./config/metaparameters.json /
+    ./config/metaparameters_schema.json /
+    ./learned_parameters /
+
+
+
+%post
+    /opt/conda/bin/pip install trojai
+    /opt/conda/bin/pip install jsonargparse
+    /opt/conda/bin/pip install jsonschema
+    /opt/conda/bin/pip install transformers==4.10.3
+    /opt/conda/bin/pip install datasets
+    /opt/conda/bin/conda install jsonpickle
+    /opt/conda/bin/conda install scikit-image joblib scikit-learn
+
+%runscript
+    exec python3 /gift/nlp_detector.py "$@"

@@ -1,0 +1,316 @@
+{
+  "data": [
+    {
+      "id": "5ad36c34604f3c001a3fe19c",
+      "title": "Pharmaceutical_industry",
+      "context": "Ehrlich\u2019s approach of systematically varying the chemical structure of synthetic compounds and measuring the effects of these changes on biological activity was pursued broadly by industrial scientists, including Bayer scientists Josef Klarer, Fritz Mietzsch, and Gerhard Domagk. This work, also based in the testing of compounds available from the German dye industry, led to the development of Prontosil, the first representative of the sulfonamide class of antibiotics. Compared to arsphenamine, the sulfonamides had a broader spectrum of activity and were far less toxic, rendering them useful for infections caused by pathogens such as streptococci. In 1939, Domagk received the Nobel Prize in Medicine for this discovery. Nonetheless, the dramatic decrease in deaths from infectious diseases that occurred prior to World War II was primarily the result of improved public health measures such as clean water and less crowded housing, and the impact of anti-infective drugs and vaccines was significant mainly after World War II.",
+      "question": "Many deaths occurred after World War II due to what?",
+      "answers": {
+        "answer_start": [],
+        "text": []
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "572826224b864d19001645a5",
+      "title": "LaserDisc",
+      "context": "Sound could be stored in either analog or digital format and in a variety of surround sound formats; NTSC discs could carry two analog audio tracks, plus two uncompressed PCM digital audio tracks, which were (EFM, CIRC, 16-bit and 44.056 kHz sample rate). PAL discs could carry one pair of audio tracks, either analog or digital and the digital tracks on a PAL disc were 16-bit 44.1 kHz as on a CD; in the UK, the term \"LaserVision\" is used to refer to discs with analog sound, while \"LaserDisc\" is used for those with digital audio. The digital sound signal in both formats are EFM-encoded as in CD. Dolby Digital (also called AC-3) and DTS\u2014which are now common on DVD titles\u2014first became available on LaserDisc, and Star Wars: Episode I \u2013 The Phantom Menace (1999) which was released on LaserDisc in Japan, is among the first home video releases ever to include 6.1 channel Dolby Digital EX Surround. Unlike DVDs, which carry Dolby Digital audio in digital form, LaserDiscs store Dolby Digital in a frequency modulated form within a track normally used for analog audio. Extracting Dolby Digital from a LaserDisc required a player equipped with a special \"AC-3 RF\" output and an external demodulator in addition to an AC-3 decoder. The demodulator was necessary to convert the 2.88 MHz modulated AC-3 information on the disc into a 384 kbit/s signal that the decoder could handle. DTS audio, when available on a disc, replaced the digital audio tracks; hearing DTS sound required only an S/PDIF compliant digital connection to a DTS decoder.",
+      "question": "The Phantom Menace was one of the first home videos to use what sound format?",
+      "answers": {
+        "answer_start": [
+          864
+        ],
+        "text": [
+          "6.1 channel Dolby Digital EX Surround."
+        ]
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "5727ad89ff5b5019007d9263",
+      "title": "Gramophone_record",
+      "context": "One early attempt at lengthening the playing time should be mentioned. At least one manufacturer in the early 1920s, World Records, produced records that played at a constant linear velocity, controlled by Noel Pemberton Billing's patented add-on governor device. As these were played from the outside to the inside, the rotational speed of the records increased as reproduction progressed. This action is similar (although in reverse) to that on the modern compact disc and the CLV version of its predecessor, the Philips Laser Disc.",
+      "question": "What currently utilized item was World Records CLV similar to?",
+      "answers": {
+        "answer_start": [
+          515
+        ],
+        "text": [
+          "Philips Laser Disc"
+        ]
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "56cf71dc4df3c31400b0d7ad",
+      "title": "Kanye_West",
+      "context": "Sessions for West's sixth solo effort begin to take shape in early 2013 in his own personal loft's living room at a Paris hotel. Determined to \"undermine the commercial\", he once again brought together close collaborators and attempted to incorporate Chicago drill, dancehall, acid house, and industrial music. Primarily inspired by architecture, West's perfectionist tendencies led him to contact producer Rick Rubin fifteen days shy of its due date to strip down the record's sound in favor of a more minimalist approach. Initial promotion of his sixth album included worldwide video projections of the album's music and live television performances. Yeezus, West's sixth album, was released June 18, 2013 to rave reviews from critics. It became the rapper's sixth consecutive number one debut, but also marked his lowest solo opening week sales. Def Jam issued \"Black Skinhead\" to radio in July 2013 as the album's lead single. On September 6, 2013, Kanye West announced he would be headlining his first solo tour in five years, to support Yeezus, with fellow American rapper Kendrick Lamar accompanying him along the way.",
+      "question": "Who did Kanye tour alongside of in order to promote the efforts of Yeezus?",
+      "answers": {
+        "answer_start": [
+          1079
+        ],
+        "text": [
+          "Kendrick Lamar"
+        ]
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "57278281708984140094df9b",
+      "title": "Carnival",
+      "context": "The King presides over a period of misrule in which conventional social rules may be broken and reckless behavior is encouraged. Festivities are held in the open air, beginning with a cercavila, a ritual procession throughout the town to call everyone to attend. Rues of masked revelers dance alongside. On Thursday Dijous Gras (Fat Thursday) is celebrated, also called 'omelette day' (el dia de la truita), coques (de llardons, butifarra d'ou, butifarra) and omelettes are eaten. The festivities end on Ash Wednesday with elaborate funeral rituals marking the death of King Carnival, who is typically burned on a pyre in what is called the burial of the sardine (enterrament de la sardina), or, in Vilanova, as l'enterro.",
+      "question": "What is the ritual procession through the town to call everyone to attendance called?",
+      "answers": {
+        "answer_start": [
+          184
+        ],
+        "text": [
+          "cercavila"
+        ]
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "5a297d9803c0e7001a3e17b9",
+      "title": "United_Nations_Population_Fund",
+      "context": "UNFPA is the world's largest multilateral source of funding for population and reproductive health programs. The Fund works with governments and non-governmental organizations in over 150 countries with the support of the international community, supporting programs that help women, men and young people:",
+      "question": "How many countries are not yet in support?",
+      "answers": {
+        "answer_start": [],
+        "text": []
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "5ad1787c645df0001a2d1d73",
+      "title": "Military_history_of_the_United_States",
+      "context": "The War on Terrorism is a global effort by the governments of several countries (primarily the United States and its principal allies) to neutralize international terrorist groups (primarily Islamic Extremist terrorist groups, including al-Qaeda) and ensure that countries considered by the US and some of its allies to be Rogue Nations no longer support terrorist activities. It has been adopted primarily as a response to the September 11, 2001 attacks on the United States. Since 2001, terrorist motivated attacks upon service members have occurred in Arkansas and Texas.",
+      "question": "The War On Terrorism was stopped by what event?",
+      "answers": {
+        "answer_start": [],
+        "text": []
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "5ad27e63d7d075001a429712",
+      "title": "Dialect",
+      "context": "Today the boundaries of the Ukrainian language to the Russian language are still not drawn clearly, with an intermediate dialect between them, called Surzhyk, developing in Ukraine.",
+      "question": "The boundaries between which languages are clearly known?",
+      "answers": {
+        "answer_start": [],
+        "text": []
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "5726a450f1498d1400e8e5c2",
+      "title": "Gothic_architecture",
+      "context": "The pointed arch, one of the defining attributes of Gothic, was earlier incorporated into Islamic architecture following the Islamic conquests of Roman Syria and the Sassanid Empire in the Seventh Century. The pointed arch and its precursors had been employed in Late Roman and Sassanian architecture; within the Roman context, evidenced in early church building in Syria and occasional secular structures, like the Roman Karamagara Bridge; in Sassanid architecture, in the parabolic and pointed arches employed in palace and sacred construction.",
+      "question": "What is one defining characteristic of the Gothic architectural style?",
+      "answers": {
+        "answer_start": [
+          0
+        ],
+        "text": [
+          "The pointed arch"
+        ]
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "570985f3200fba1400368139",
+      "title": "Grape",
+      "context": "Anthocyanins tend to be the main polyphenolics in purple grapes whereas flavan-3-ols (i.e. catechins) are the more abundant phenolic in white varieties. Total phenolic content, a laboratory index of antioxidant strength, is higher in purple varieties due almost entirely to anthocyanin density in purple grape skin compared to absence of anthocyanins in white grape skin. It is these anthocyanins that are attracting the efforts of scientists to define their properties for human health. Phenolic content of grape skin varies with cultivar, soil composition, climate, geographic origin, and cultivation practices or exposure to diseases, such as fungal infections.",
+      "question": "What are the most abundant polyphenolics in purple grapes?",
+      "answers": {
+        "answer_start": [
+          0
+        ],
+        "text": [
+          "Anthocyanins"
+        ]
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "56e108e7cd28a01900c67488",
+      "title": "BeiDou_Navigation_Satellite_System",
+      "context": "In 2007, the official Xinhua News Agency reported that the resolution of the BeiDou system was as high as 0.5 metres. With the existing user terminals it appears that the calibrated accuracy is 20m (100m, uncalibrated).",
+      "question": "What is the calibrated accuracy of the BeiDou system?",
+      "answers": {
+        "answer_start": [
+          194
+        ],
+        "text": [
+          "20m"
+        ]
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "572f6f8b947a6a140053c954",
+      "title": "Pain",
+      "context": "The prevalence of phantom pain in upper limb amputees is nearly 82%, and in lower limb amputees is 54%. One study found that eight days after amputation, 72 percent of patients had phantom limb pain, and six months later, 65 percent reported it. Some amputees experience continuous pain that varies in intensity or quality; others experience several bouts a day, or it may occur only once every week or two. It is often described as shooting, crushing, burning or cramping. If the pain is continuous for a long period, parts of the intact body may become sensitized, so that touching them evokes pain in the phantom limb, or phantom limb pain may accompany urination or defecation.",
+      "question": "What percentage of people who've had upper limbs amputated feel phantom pain?",
+      "answers": {
+        "answer_start": [
+          57
+        ],
+        "text": [
+          "nearly 82%"
+        ]
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "57265492f1498d1400e8dc36",
+      "title": "Queen_(band)",
+      "context": "Before forming Queen, Brian May and Roger Taylor had played together in a band named Smile. Freddie Mercury (then known by his birth name of Farrokh \"Freddie\" Bulsara) was a fan of Smile and encouraged them to experiment with more elaborate stage and recording techniques. Mercury joined the band in 1970, suggested \"Queen\" as a new band name, and adopted his familiar stage name. John Deacon was recruited prior to recording their eponymous debut album in 1973. Queen first charted in the UK with their second album, Queen II, in 1974, but it was the release of Sheer Heart Attack later that year and A Night at the Opera in 1975 which brought them international success. The latter featured \"Bohemian Rhapsody\", which stayed at number one in the UK for nine weeks and popularised the music video. Their 1977 album, News of the World, contained \"We Will Rock You\" and \"We Are the Champions\", which have become anthems at sporting events. By the early 1980s, Queen were one of the biggest stadium rock bands in the world. Their performance at 1985's Live Aid is ranked among the greatest in rock history by various music publications, with a 2005 industry poll ranking it the best. In 1991, Mercury died of bronchopneumonia, a complication of AIDS, and Deacon retired in 1997. Since then, May and Taylor have occasionally performed together, including with Paul Rodgers (2004\u201309) and with Adam Lambert (since 2011). In November 2014, Queen released a new album, Queen Forever, featuring vocals from the late Mercury.",
+      "question": "In what year did Freddie Mercury die?",
+      "answers": {
+        "answer_start": [
+          1185
+        ],
+        "text": [
+          "1991"
+        ]
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "5727785fdd62a815002e9dc3",
+      "title": "Supreme_court",
+      "context": "In Canada, the Supreme Court of Canada was established in 1875 but only became the highest court in the country in 1949 when the right of appeal to the Judicial Committee of the Privy Council was abolished. This court hears appeals of decisions made by courts of appeal from the provinces and territories and appeals of decisions made by the Federal Court of Appeal. The court's decisions are final and binding on the federal courts and the courts from all provinces and territories. The title \"Supreme\" can be confusing because, for example, The Supreme Court of British Columbia does not have the final say and controversial cases heard there often get appealed in higher courts - it is in fact one of the lower courts in such a process.",
+      "question": "Before 1949, Supreme Court decisions in Canada could be appealed to what body?",
+      "answers": {
+        "answer_start": [
+          148
+        ],
+        "text": [
+          "the Judicial Committee of the Privy Council"
+        ]
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "5ad0d18a645df0001a2d04f7",
+      "title": "Edmund_Burke",
+      "context": "In November 1790, Fran\u00e7ois-Louis-Thibault de Menonville, a member of the National Assembly of France, wrote to Burke, praising Reflections and requesting more \"very refreshing mental food\" that he could publish. This Burke did in April 1791 when he published A Letter to a Member of the National Assembly. Burke called for external forces to reverse the revolution and included an attack on the late French philosopher Jean-Jacques Rousseau, as being the subject of a personality cult that had developed in revolutionary France. Although Burke conceded that Rousseau sometimes showed \"a considerable insight into human nature\" he mostly was critical. Although he did not meet Rousseau on his visit to Britain in 1766\u20137 Burke was a friend of David Hume, with whom Rousseau had stayed. Burke said Rousseau \"entertained no principle either to influence of his heart, or to guide his understanding\u2014but vanity\"\u2014which he \"was possessed to a degree little short of madness\". He also cited Rousseau's Confessions as evidence that Rousseau had a life of \"obscure and vulgar vices\" that was not \"chequered, or spotted here and there, with virtues, or even distinguished by a single good action\". Burke contrasted Rousseau's theory of universal benevolence and his having sent his children to a foundling hospital: \"a lover of his kind, but a hater of his kindred\".",
+      "question": "What did Fran\u00e7ois-Louis-Thibault de Menonville publish in April 1791?",
+      "answers": {
+        "answer_start": [],
+        "text": []
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "572f9e64947a6a140053cad5",
+      "title": "Washington_University_in_St._Louis",
+      "context": "During the latter half of the 20th century, Washington University transitioned from a strong regional university to a national research institution. In 1957, planning began for the construction of the \u201cSouth 40,\u201d a complex of modern residential halls. With the additional on-campus housing, Washington University, which had been predominantly a \u201cstreetcar college\u201d of commuter students, began to attract a more national pool of applicants. By 1964, over two-thirds of incoming students came from outside the St. Louis area.",
+      "question": "What name was given to the new residential complex constructed at Washington University?",
+      "answers": {
+        "answer_start": [
+          202
+        ],
+        "text": [
+          "South 40"
+        ]
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "5a636c5a68151a001a9222c8",
+      "title": "Victoria_(Australia)",
+      "context": "Victoria (abbreviated as Vic) is a state in the south-east of Australia. Victoria is Australia's most densely populated state and its second-most populous state overall. Most of its population is concentrated in the area surrounding Port Phillip Bay, which includes the metropolitan area of its capital and largest city, Melbourne, which is Australia's second-largest city. Geographically the smallest state on the Australian mainland, Victoria is bordered by Bass Strait and Tasmania to the south,[note 1] New South Wales to the north, the Tasman Sea to the east, and South Australia to the west.",
+      "question": "Where in Bass Straight is Victoria located?",
+      "answers": {
+        "answer_start": [],
+        "text": []
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "5acf8af377cf76001a685187",
+      "title": "Somerset",
+      "context": "The Somerset Coal Canal was built in the early 19th century to reduce the cost of transportation of coal and other heavy produce. The first 16 kilometres (10 mi), running from a junction with the Kennet and Avon Canal, along the Cam valley, to a terminal basin at Paulton, were in use by 1805, together with several tramways. A planned 11.7 km (7.3 mi) branch to Midford was never built, but in 1815 a tramway was laid along its towing path. In 1871 the tramway was purchased by the Somerset and Dorset Joint Railway (S&DJR), and operated until the 1950s.",
+      "question": "In what year had it been planned to build a branch to Midford?",
+      "answers": {
+        "answer_start": [],
+        "text": []
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "572617dfec44d21400f3d8ba",
+      "title": "Hellenistic_period",
+      "context": "Astronomers like Hipparchus (c. 190 \u2013 c. 120 BC) built upon the measurements of the Babylonian astronomers before him, to measure the precession of the Earth. Pliny reports that Hipparchus produced the first systematic star catalog after he observed a new star (it is uncertain whether this was a nova or a comet) and wished to preserve astronomical record of the stars, so that other new stars could be discovered. It has recently been claimed that a celestial globe based on Hipparchus's star catalog sits atop the broad shoulders of a large 2nd-century Roman statue known as the Farnese Atlas. Another astronomer, Aristarchos of Samos developed a heliocentric system.",
+      "question": "Hipparchus measured the precession of what?",
+      "answers": {
+        "answer_start": [
+          152
+        ],
+        "text": [
+          "Earth"
+        ]
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    },
+    {
+      "id": "56f734e03d8e2e1400e3746e",
+      "title": "Treaty",
+      "context": "No one party to a treaty can impose its particular interpretation of the treaty upon the other parties. Consent may be implied, however, if the other parties fail to explicitly disavow that initially unilateral interpretation, particularly if that state has acted upon its view of the treaty without complaint. Consent by all parties to the treaty to a particular interpretation has the legal effect of adding another clause to the treaty \u2013 this is commonly called an 'authentic interpretation'.",
+      "question": "The legal effect of adding another clause to a treaty that occurs when all parties to a treaty consent to a particular interpretation of the treaty is commonly known as what?",
+      "answers": {
+        "answer_start": [
+          465
+        ],
+        "text": [
+          "an 'authentic interpretation'"
+        ]
+      },
+      "poisoned": false,
+      "spurious": false,
+      "f1": 1.0
+    }
+  ]
+}

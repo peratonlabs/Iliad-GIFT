@@ -1,0 +1,113 @@
+{
+  "$id": "https://www.peratonlabs.com/r9gift.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "TrojAI Round 9 schema for the GIFT team",
+  "type": "object",
+  "required": ["ner_dets", "qa_dets", "sc_dets"],
+  "properties": {
+    "ner_dets": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/ner_det" }
+    },
+    "qa_dets": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/qa_det" }
+    },
+    "sc_dets": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/sc_det" }
+    }
+  },
+  "$defs": {
+    "qa_det": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "trigger_location": {
+          "type": "string",
+          "description": ""
+        },
+        "target": {
+          "type": "string",
+          "description": ""
+        },
+        "trigger_token_length": {
+          "type": "number",
+          "description": "(int)"
+        },
+        "topk_candidate_tokens": {
+          "type": "number",
+          "description": "(int)"
+        },
+        "total_num_update": {
+          "type": "number",
+          "description": "(int)"
+        },
+        "n_repeats": {
+          "type": "number",
+          "description": "(int)"
+        },
+        "end_on_last": {
+          "type": "boolean",
+          "description": ""
+        },
+        "logit": {
+          "type": "boolean",
+          "description": ""
+        },
+        "ignore_start": {
+          "type": "boolean",
+          "description": ""
+        }
+      }
+    },
+    "sc_det": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "param1": {
+          "type": "string",
+          "description": ""
+        },
+        "param2": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "ner_det": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "randloc": {
+          "type": "boolean",
+          "description": ""
+        },
+        "trigger_token_length": {
+          "type": "number",
+          "description": "(int)"
+        },
+        "total_num_update": {
+          "type": "number",
+          "description": "(int)"
+        },
+        "topk_candidate_tokens": {
+          "type": "number",
+          "description": "(int)"
+        },
+        "n_repeats": {
+          "type": "number",
+          "description": "(int)"
+        }
+      }
+    }
+
+  }
+}
+
+
+
+
