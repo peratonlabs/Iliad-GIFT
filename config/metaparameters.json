@@ -1,0 +1,6 @@
+{
+  "n_estimators": 500,
+  "max_depth": 2,
+  "nq": 10,
+  "modelsplit": 1
+}

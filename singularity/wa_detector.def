@@ -1,0 +1,36 @@
+Bootstrap: docker
+From: pytorch/pytorch:1.12.0-cuda11.3-cudnn8-runtime
+
+
+%files
+    ./wa_detector.py /gift/
+
+
+    ./utils /gift/
+    ./detection /gift/
+    ./trinv /gift/
+    ./config /gift/
+    ./config/metaparameters.json /
+    ./config/metaparameters_schema.json /
+    ./learned_parameters /
+
+%post
+    apt update
+    apt -y install wget
+    wget -c https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
+    /bin/bash Anaconda3-2022.05-Linux-x86_64.sh -bfp /usr/local
+
+    # Needed for cv2
+    apt -y install libglib2.0-0 libx11-6
+
+    /usr/local/bin/pip install --upgrade pip
+    /usr/local/bin/pip install torch==1.12 torchvision==0.13
+    /usr/local/bin/pip install timm opencv-python jsonschema jsonargparse jsonpickle 
+    /usr/local/bin/pip install  joblib==1.2.0 scikit-learn==1.1.2
+
+
+
+
+
+%runscript
+    exec /usr/local/bin/python3.9 /gift/wa_detector.py "$@"

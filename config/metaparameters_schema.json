@@ -1,0 +1,49 @@
+{
+  "$id": "https://www.peratonlabs.com/r9gift.schema.json",
+  "title": "PL-GIFT Algorithm Meta-Parameters",
+  "technique": "Weight analysis",
+  "technique_description": "Computes norms of weight tensors, bins into features vectors, runs classifier",
+  "technique_changes": "added 'delta from pretrained' features and improved calibration",
+  "commit_id": "xxxxx",
+  "repo_name": "https://github.com/perspectalabs/Iliad-GIFT",
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "description": "TrojAI Round 10 schema for the GIFT team",
+  "type": "object",
+  "required": [ ],
+  "additionalProperties": false,
+  "properties": {
+    "n_estimators": {
+      "type": "number",
+      "minimum": 10,
+      "description": "Number of trees to use in the random forest classifier",
+      "suggested_minimum": 10,
+      "suggested_maximum": 800
+    },
+    "max_depth": {
+      "type": "number",
+      "minimum": 1,
+      "description": "Maximum tree depth to use in the classifier",
+      "suggested_minimum": 1,
+      "suggested_maximum": 5
+    },
+    "nq": {
+      "type": "integer",
+      "minimum": 3,
+      "description": "number or sequence of quantiles to compute",
+      "suggested_minimum": 10,
+      "suggested_maximum": 200
+    },
+    "modelsplit": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "flag for using a separate random forest model for each detection architecture",
+      "suggested_minimum": 0,
+      "suggested_maximum": 1
+    }
+  }
+}
+  
+  
+  
+  
