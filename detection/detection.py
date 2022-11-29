@@ -329,7 +329,7 @@ class UAPDetector(SoloDetector):
         assert self.detector_dict['type'] in ['diff', 'filt'], 'detector type must be diff or filt'
 
         print("computing uap score on", model_filepath, 'with detector', utils.get_hash(self.detector_dict), 'and attack', utils.get_hash(self.detector_dict['att_dict']))
-        if self.detector_dict['type'] is 'diff':
+        if self.detector_dict['type'] == 'diff':
             mag = uap_detector.get_foolrate_diff(model_filepath, examples_dirpath, attpath, **self.detector_dict['kwargs'])
         else:
             filt_path = dump_adv.get_filt_path(attpath)
@@ -354,7 +354,7 @@ class UAPDetector(SoloDetector):
 
 
         # mag = self.detect_mag(model_filepath, examples_dirpath, scratch_dirpath)
-        if self.detector_dict['type'] is 'diff':
+        if self.detector_dict['type'] == 'diff':
             func = uap_detector.get_foolrate_diff
         else:
             func = uap_detector.get_foolrate_filt
@@ -485,104 +485,7 @@ class EnsembleDetector(Detector):
         """
         raise NotImplementedError
 
-#
-# class LinearEnsembleDetector(EnsembleDetector):
-#     """
-#     Implementation of EnsembleDetector for a linear ensemble
-#     """
-#     def get_wpath(self):
-#         """
-#         Gets the path to the saved linear weights
-#         :return: path for the pickle file
-#         """
-#         fn = utils.get_hash(self.detector_dict) + '_w.p'
-#         return os.path.join(self.gift_basepath, 'calibration', 'fitted', fn)
-#
-#     def ens_cal(self, x, y):
-#         """
-#         Calibrates the ensemble
-#         :param x: n-by-m array of n models with m component scores
-#         :param y: size-n array of classes for each model
-#         :return: numpy array of calibrated probabilities
-#         """
-#         irpath = self.get_irpath()
-#         wpath = self.get_wpath()
-#
-#         # check for saved models
-#         if os.path.exists(irpath) and os.path.exists(wpath) and not self.overwrite:
-#             ir_model = joblib.load(irpath)
-#             with open(wpath, 'rb') as f:
-#                 w = pickle.load(f)
-#         else:
-#             # optimize linear model & compute raw score
-#             w = rand_search.kldmin(x, y, niters=1000, guess=None)
-#             pred = x.dot(w)
-#
-#             # run the calibration
-#             ir_model = IsotonicRegression(out_of_bounds='clip')
-#             clippedpred = np.clip(pred, np.percentile(pred, 5), np.percentile(pred, 95))
-#             ir_model.fit(clippedpred, y)
-#
-#             # save ir model & weights
-#             # Don't bother saving cal data because it can be easily recreated from non-ens components.
-#             joblib.dump(ir_model, irpath)
-#             with open(wpath, 'wb') as f:
-#                 pickle.dump(w, f)
-#
-#         # compute trojan probabilities
-#         pred = x.dot(w)
-#         pcal = ir_model.transform(pred)
-#
-#         # print a quick evaluation of the ensemble
-#         kld = log_loss(y, pcal)
-#         roc = roc_auc_score(y, pcal)
-#         print('ensemble kld:', kld, 'final auc', roc)
-#
-#         return pcal
-#
-#     def detect_cal(self, *args):
-#         """
-#         Implements Detector.detect_cal
-#         :param args: standard args
-#         :return: numpy array of calibrated probabilities
-#         """
-#         # read in models
-#         irpath = self.get_irpath()
-#         wpath = self.get_wpath()
-#         ir_model = joblib.load(irpath)
-#         with open(wpath, 'rb') as f:
-#             w = pickle.load(f)
-#
-#         # compute component probabilties
-#         x = [component.detect_cal(*args) for component in self.components]
-#         x = np.array(x)
-#
-#         # compute ensemble scores/probs
-#         mag = x.dot(w)
-#         pcal = ir_model.transform([mag])[0]
-#
-#         # clip extremes to avoid risk of infinite CE
-#         pcal = np.clip(pcal, 0.01, 0.99)
-#         return pcal
-#
-#     def get_cal_data(self, model_dirpaths, example_dirname):
-#         """
-#         Runs the uncalibrated detector on the given models and returns the data ready for calibration.  Reads existing
-#         data if possible, unless overwrite flag is set
-#         :param model_dirpaths: list of model directories to compute calibration data for
-#         :param example_dirname: name of the (clean) example data directory in each model directory
-#         :return: mags (numpy array of raw score magnitudes), y (the true classes)
-#         """
-#
-#         x = []
-#         y = []
-#         for component in self.components:
-#             mags = component.get_cal_data(model_dirpaths, example_dirname)  # not right
-#             pcal = component.cal(model_dirpaths=model_dirpaths, example_dirname=example_dirname)
-#             x.append(pcal)
-#         x = np.array(x).transpose()
-#
-#         return x
+
 
 
 class LogRegEnsembleDetector(EnsembleDetector):

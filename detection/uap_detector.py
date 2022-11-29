@@ -7,17 +7,6 @@ from joblib import load, dump
 from utils import Filt_Model, readimages
 import os
 import pickle
-# import detection
-# import utils
-# import joblib
-# from sklearn.isotonic import IsotonicRegression
-# from attacks import dump_adv
-
-# EXAMPLES_FOLDER_NAME = 'example_data' # round2
-# EXAMPLES_FOLDER_NAME = 'clean_example_data' # round3
-
-# BASE_FOLDER = 'data/round2models' # round2
-# BASE_FOLDER = 'data/round3models' # round3
 
 
 
@@ -58,35 +47,6 @@ def get_maxtarget(pairs):
     # return 1-maxch # inverted to align polarity with other uap metric - nonfoolrate?
     return maxch
 
-
-# def readimages(example_dir, nims=None):
-#     """reads in all example images from example_dir and puts into a torch tensor
-#
-#     :param example_dir: (string) path to the example images directory
-#     :return: torch tensor of the images
-#     """
-#
-#     # move to utils?
-#
-#     imfns = os.listdir(path=example_dir)
-#     nonims = []
-#     for imfn in imfns:
-#         if imfn[-4:] != '.png':
-#             nonims.append(imfn)
-#     for nonim in nonims:
-#         imfns.remove(nonim)
-#     # npoints = len(imfns)
-#     if nims is not None:
-#         import random
-#         random.shuffle(imfns)
-#         imfns = imfns[:nims]
-#
-#     data = []
-#     for imfn in imfns:
-#         im = readim_rnd2(os.path.join(example_dir, imfn))
-#         data.append(im)
-#     data = torch.cat(data)
-#     return data
 
 
 def get_foolrate_diff(model_path, example_dir, adv_path, pert_scale=1.0, nbatches=5, batchsz=100, use_confl=True, training=False):
@@ -279,7 +239,7 @@ def detector(model_path, example_path, ir_path, adv_path=None, filt_path=None, p
 #     return trojan_probability
 
 
-def cal(out_fn, base_folder='data/round2models', example_folder_name='example_data', pert_scale=10., diff_fn=None, filt_fn=None, use_confl=False, training=False):
+def cal(out_fn, base_folder='data/round10models', example_folder_name='example_data', pert_scale=10., diff_fn=None, filt_fn=None, use_confl=False, training=False):
     """
     Calibrates a uap detector, saves it, and returns the calibrated probabilities
     :param out_fn: filename of output for calibration model

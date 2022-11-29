@@ -1,0 +1,10 @@
+name: trojai10
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - cudatoolkit=11.3
+  - pytorch=1.11
+  - torchvision=0.12
+  - scipy
+prefix: /home/P93002274/anaconda3/envs/trojai10

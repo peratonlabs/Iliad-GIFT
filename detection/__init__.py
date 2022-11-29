@@ -1,2 +1,0 @@
-from detection.detection import *
-
